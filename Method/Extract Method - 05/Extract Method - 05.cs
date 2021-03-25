@@ -15,10 +15,7 @@ namespace ExamplesApp.Method
     	private void CreatePayment(int price, int compensation) {
 		Payment payment = new Payment();
 		payment.Cost = price + compensation;
-		if(payment.Cost > 50000)
-		    payment.IsExtra = true;
-		else
-		    payment.IsExtra = false;
+		payment.IsExtra = payment.Cost > 50000 ? true : false;
 
       		// Print details.
       		System.out.println("Hello.");
