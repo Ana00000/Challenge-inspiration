@@ -12,7 +12,7 @@ namespace ExamplesApp.Method
 	/// <summary>
         /// 1) Extract createPayment method.
         /// </summary>
-    	private void createPayment(int price, int compensation) {
+    	private void CreatePayment(int price, int compensation) {
 		Payment payment = new Payment();
 		payment.Cost = price + compensation;
 		if(payment.Cost > 50000)
